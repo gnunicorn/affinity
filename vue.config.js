@@ -53,6 +53,14 @@ module.exports = {
         })
       }
     }),
+    admin: {
+      entry: "src/admin.tsx",
+      template: "src/templates/admin.html",
+      filename: "admin.html",
+      templateParameters: {
+        settings: Object.assign({}, APP_SETTING_DEFAULTS)
+      }
+    },
     widget: {
       entry: "src/chat-widget.js",
       template: "src/templates/chat-widget.html",
@@ -61,6 +69,7 @@ module.exports = {
         settings: Object.assign({}, APP_SETTING_DEFAULTS)
       }
     },
+
   },
   configureWebpack: {
     output: {

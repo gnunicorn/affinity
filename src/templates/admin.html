@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Affinity Admin Backend</title>
+
+    <base href="/" />
+
+    <meta name="color-scheme" content="light dark" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- add to homescreen for ios -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Affinity" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <script>
+      window.AFFINITY_DEFAULT_TEAM = "<%= settings.AFFINITY_DEFAULT_TEAM %>";
+      window.PARSE_APP_ID = "<%= settings.PARSE_APP_ID %>";
+      window.PARSE_JS_KEY = "<%= settings.PARSE_JS_KEY %>";
+      window.PARSE_URL = "<%= settings.PARSE_URL %>";
+      window.PARSE_LIVE_URL = "<%= settings.PARSE_LIVE_URL %>";
+      window.ANDROID_INSTALL_URL = "<%= settings.ANDROID_INSTALL_URL %>";
+      window.IOS_INSTALL_URL = "<%= settings.IOS_INSTALL_URL %>";
+    </script>
+  </body>
+
+</html>
+
